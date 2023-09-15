@@ -20,6 +20,43 @@
         margin: 0 auto;
         /* max-width: 500px; */
       }
+
+      /* Estilos para o botão flutuante do WhatsApp */
+  .btn-whatsapp {
+    position: fixed;
+    bottom: 20px; /* Ajuste a posição vertical conforme necessário */
+    right: 20px; /* Ajuste a posição horizontal conforme necessário */
+    z-index: 1000;
+  }
+
+  .btn-whatsapp a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25d366; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    font-size: 16px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    text-decoration: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .btn-whatsapp a i {
+    font-size: 24px;
+  }
+
+  .btn-whatsapp a:hover {
+    background-color: #128c7e; /* Cor de fundo do botão ao passar o mouse */
+  }
+
+  /* Estilos para dispositivos móveis */
+  @media (min-width: 768px) {
+    .btn-whatsapp {
+      display: none; /* Ocultar o botão em telas menores */
+    }
+  }
     </style>
     <link rel="icon" href="img/icon2.jpg" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
@@ -37,6 +74,17 @@
         </p>
       </div>
     </header>
+
+    <div id="whatsapp-button" class="btn-whatsapp">
+      <a
+      href="https://api.whatsapp.com/send?phone=554799462722"
+      target="_blank"
+      rel="noopener"
+      class="btn btn-success"
+    >
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
 
     <div class="container">
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
