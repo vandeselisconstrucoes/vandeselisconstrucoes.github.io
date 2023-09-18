@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contato - Minha Empresa</title>
+    <title>V A N DE SELIS CONSTRUÇÕES</title>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -22,44 +22,73 @@
       }
 
       /* Estilos para o botão flutuante do WhatsApp */
-  .btn-whatsapp {
-    position: fixed;
-    bottom: 20px; /* Ajuste a posição vertical conforme necessário */
-    right: 20px; /* Ajuste a posição horizontal conforme necessário */
-    z-index: 1000;
-  }
+      .btn-whatsapp {
+        position: fixed;
+        bottom: 20px; /* Ajuste a posição vertical conforme necessário */
+        right: 20px; /* Ajuste a posição horizontal conforme necessário */
+        z-index: 1000;
+      }
 
-  .btn-whatsapp a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #25d366; /* Cor de fundo do botão */
-    color: #fff; /* Cor do texto do botão */
-    font-size: 16px;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    text-decoration: none;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  }
+      .btn-whatsapp a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #25d366; /* Cor de fundo do botão */
+        color: #fff; /* Cor do texto do botão */
+        font-size: 16px;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        text-decoration: none;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      }
 
-  .btn-whatsapp a i {
-    font-size: 24px;
-  }
+      .btn-whatsapp a i {
+        font-size: 24px;
+      }
 
-  .btn-whatsapp a:hover {
-    background-color: #128c7e; /* Cor de fundo do botão ao passar o mouse */
-  }
+      .btn-whatsapp a:hover {
+        background-color: #128c7e; /* Cor de fundo do botão ao passar o mouse */
+      }
 
-  /* Estilos para dispositivos móveis */
-  @media (min-width: 768px) {
-    .btn-whatsapp {
-      display: none; /* Ocultar o botão em telas menores */
-    }
-  }
+      #whatsappButton {
+        display: inline-block;
+        padding: 20px 40px; /* Ajuste o tamanho conforme necessário */
+        background-color: #25d366; /* Cor de destaque do WhatsApp */
+        color: #fff;
+        font-size: 24px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        animation: pulse 1s infinite alternate; /* Animação de pulso */
+        text-decoration: none;
+      }
+
+      #whatsappButton:hover {
+        background-color: #058434;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        100% {
+          transform: scale(1.05);
+        }
+      }
+
+      /* Estilos para dispositivos móveis */
+      @media (min-width: 768px) {
+        .btn-whatsapp {
+          display: none; /* Ocultar o botão em telas menores */
+        }
+      }
     </style>
     <link rel="icon" href="img/icon2.jpg" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
   </head>
   <body>
     <header class="jumbotron">
@@ -69,7 +98,7 @@
           construção civil e serviços relacionados. Com uma história sólida e um
           compromisso inabalável com a qualidade, nossa empresa oferece uma
           ampla gama de serviços, incluindo obras de alvenaria, instalação e
-          manutenção elétrica, instalações hidráulicas, sanitárias e de gás, bem
+          manutenção elétrica, instalações hidráulicas, sanitárias e de MND, bem
           como outras obras de acabamento da construção.
         </p>
       </div>
@@ -77,11 +106,12 @@
 
     <div id="whatsapp-button" class="btn-whatsapp">
       <a
-      href="https://api.whatsapp.com/send?phone=554799462722"
-      target="_blank"
-      rel="noopener"
-      class="btn btn-success"
-    >
+        id="whatsappButtonMobile"
+        href="#"
+        target="_blank"
+        rel="noopener"
+        class="btn btn-success"
+      >
         <i class="fab fa-whatsapp"></i>
       </a>
     </div>
@@ -90,142 +120,206 @@
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <h3>Nossos Objetivos</h3>
-            <div class="carousel-item active">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="carousel-text">
-                            <p>
-                                <strong>Excelência na Qualidade:</strong> Nosso principal objetivo é oferecer serviços que atendam aos mais altos padrões de qualidade. Buscamos sempre a excelência em tudo o que fazemos, desde a fase inicial de planejamento até a entrega final do projeto.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <img src="img/img1.jpeg" class="d-block w-100 img-fluid" alt="Imagem 1">
-                    </div>
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="carousel-text">
+                  <p>
+                    <strong>Excelência na Qualidade:</strong> Nosso principal
+                    objetivo é oferecer serviços que atendam aos mais altos
+                    padrões de qualidade. Buscamos sempre a excelência em tudo o
+                    que fazemos, desde a fase inicial de planejamento até a
+                    entrega final do projeto.
+                  </p>
                 </div>
-            </div>
-            <div class="carousel-item">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="carousel-text">
-                            <p>
-                                <strong>Compromisso com a Segurança:</strong> A segurança é uma prioridade fundamental para a V A N DE SELIS CONSTRUÇÕES. Implementamos rigorosos protocolos de segurança para garantir um ambiente de trabalho seguro para nossa equipe e clientes.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <img src="img/img2.jpeg" class="d-block w-100 img-fluid" alt="Imagem 2">
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row">
-                  <div class="col-md-6">
-                      <div class="carousel-text">
-                          <p>
-                              <strong>Satisfação do Cliente:</strong> Valorizamos a satisfação
-                              do cliente acima de tudo. Trabalhamos em estreita colaboração
-                              com nossos clientes para entender suas necessidades e garantir
-                              que cada projeto seja concluído de acordo com suas expectativas.
-                          </p>
-                      </div>
-                  </div>
-                  <div class="col-md-6">
-                      <img src="img/img3.jpeg" class="d-block w-100 img-fluid" alt="Imagem 2">
-                  </div>
               </div>
+              <div class="col-md-6">
+                <img
+                  src="img/img1.jpeg"
+                  class="d-block w-100 img-fluid"
+                  alt="Imagem 1"
+                />
+              </div>
+            </div>
           </div>
           <div class="carousel-item">
             <div class="row">
-                <div class="col-md-6">
-                    <div class="carousel-text">
-                        <p>
-                            <strong>Sustentabilidade Ambiental:</strong> Estamos
-                            comprometidos em minimizar nosso impacto ambiental. Buscamos
-                            constantemente práticas sustentáveis em nossos projetos e
-                            promovemos a conscientização ambiental entre nossa equipe.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <img src="img/img4.jpeg" class="d-block w-100 img-fluid" alt="Imagem 2">
-                </div>
-            </div>
-        </div>
-        <div class="carousel-item">
-          <div class="row">
               <div class="col-md-6">
-                  <div class="carousel-text">
-                      <p>
-                          <strong>Inovação e Tecnologia:</strong> A V A N DE SELIS
-                          CONSTRUÇÕES investe continuamente em tecnologia e inovação para
-                          aprimorar nossos serviços e oferecer soluções eficientes e
-                          modernas aos nossos clientes.
-                      </p>
-                  </div>
-              </div>
-              <div class="col-md-6">
-                  <img src="img/img5.jpeg" class="d-block w-100 img-fluid" alt="Imagem 2">
-              </div>
-          </div>
-      </div>
-      <div class="carousel-item">
-        <div class="row">
-            <div class="col-md-6">
                 <div class="carousel-text">
-                    <p>
-                        <strong>Crescimento Sustentável:</strong> Buscamos um
-                        crescimento sólido e sustentável como empresa. Isso nos permite
-                        continuar a servir nossos clientes com integridade e
-                        confiabilidade a longo prazo.
-                    </p>
+                  <p>
+                    <strong>Compromisso com a Segurança:</strong> A segurança é
+                    uma prioridade fundamental para a V A N DE SELIS
+                    CONSTRUÇÕES. Implementamos rigorosos protocolos de segurança
+                    para garantir um ambiente de trabalho seguro para nossa
+                    equipe e clientes.
+                  </p>
                 </div>
+              </div>
+              <div class="col-md-6">
+                <img
+                  src="img/img2.jpeg"
+                  class="d-block w-100 img-fluid"
+                  alt="Imagem 2"
+                />
+              </div>
             </div>
-            <div class="col-md-6">
-                <img src="img/img6.jpeg" class="d-block w-100 img-fluid" alt="Imagem 2">
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="carousel-text">
+                  <p>
+                    <strong>Satisfação do Cliente:</strong> Valorizamos a
+                    satisfação do cliente acima de tudo. Trabalhamos em estreita
+                    colaboração com nossos clientes para entender suas
+                    necessidades e garantir que cada projeto seja concluído de
+                    acordo com suas expectativas.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <img
+                  src="img/img3.jpeg"
+                  class="d-block w-100 img-fluid"
+                  alt="Imagem 2"
+                />
+              </div>
             </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="carousel-text">
+                  <p>
+                    <strong>Sustentabilidade Ambiental:</strong> Estamos
+                    comprometidos em minimizar nosso impacto ambiental. Buscamos
+                    constantemente práticas sustentáveis em nossos projetos e
+                    promovemos a conscientização ambiental entre nossa equipe.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <img
+                  src="img/img4.jpeg"
+                  class="d-block w-100 img-fluid"
+                  alt="Imagem 2"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="carousel-text">
+                  <p>
+                    <strong>Inovação e Tecnologia:</strong> A V A N DE SELIS
+                    CONSTRUÇÕES investe continuamente em tecnologia e inovação
+                    para aprimorar nossos serviços e oferecer soluções
+                    eficientes e modernas aos nossos clientes.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <img
+                  src="img/img5.jpeg"
+                  class="d-block w-100 img-fluid"
+                  alt="Imagem 2"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="carousel-text">
+                  <p>
+                    <strong>Crescimento Sustentável:</strong> Buscamos um
+                    crescimento sólido e sustentável como empresa. Isso nos
+                    permite continuar a servir nossos clientes com integridade e
+                    confiabilidade a longo prazo.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <img
+                  src="img/img6.jpeg"
+                  class="d-block w-100 img-fluid"
+                  alt="Imagem 2"
+                />
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-        </div>
-        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Anterior</span>
+        <a
+          class="carousel-control-prev"
+          href="#myCarousel"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
         </a>
-        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Próximo</span>
+        <a
+          class="carousel-control-next"
+          href="#myCarousel"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Próximo</span>
         </a>
-    </div>
+      </div>
 
-      <section class="contact my-5">
+      <section class="contact my-5" style="text-align: center">
         <h2>Entre em Contato</h2>
         <p>
           Estamos aqui para ajudar. Entre em contato conosco para mais
           informações.
         </p>
-        <a
-          href="https://api.whatsapp.com/send?phone=554799462722"
-          target="_blank"
-          rel="noopener"
-          class="btn btn-success"
-        >
-        <i class="fab fa-whatsapp"></i> Entre em Contato via WhatsApp
+        <a href="#" id="whatsappButton" class="btn btn-success">
+          <i class="fab fa-whatsapp"></i> Entre em Contato via WhatsApp
         </a>
       </section>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p>
+            Com uma equipe dedicada de profissionais qualificados e uma
+            abordagem centrada no cliente, a V A N DE SELIS CONSTRUÇÕES está
+            pronta para enfrentar os desafios da construção civil e superar as
+            expectativas de nossos clientes. Junte-se a nós em nossa jornada de
+            excelência na construção civil.
+          </p>
+        </div>
+      </div>
     </div>
 
     <footer class="bg-dark text-light text-center py-3">
       <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <p>Com uma equipe dedicada de profissionais qualificados e uma abordagem centrada no cliente, a V A N DE SELIS CONSTRUÇÕES está pronta para enfrentar os desafios da construção civil e superar as expectativas de nossos clientes. Junte-se a nós em nossa jornada de excelência na construção civil.</p>
-          </div>
-        </div>
-        <p>&copy; 2023 V A N DE SELIS CONSTRUÇÕES. Todos os direitos reservados.</p>
+        <p>
+          &copy; 2023 V A N DE SELIS CONSTRUÇÕES. Todos os direitos reservados.
+        </p>
       </div>
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      const phoneNumbers = ["5547999462722", "5518996605276"];
+
+      function openRandomWhatsApp() {
+        const randomIndex = Math.floor(Math.random() * phoneNumbers.length);
+        const selectedNumber = phoneNumbers[randomIndex];
+        const whatsappURL = `https://api.whatsapp.com/send?phone=${selectedNumber}`;
+        window.open(whatsappURL, "_blank");
+      }
+
+      const whatsappButton = document.getElementById("whatsappButton");
+      const whatsappButtonMobile = document.getElementById(
+        "whatsappButtonMobile"
+      );
+      whatsappButton.addEventListener("click", openRandomWhatsApp);
+      whatsappButtonMobile.addEventListener("click", openRandomWhatsApp);
+    </script>
   </body>
 </html>
